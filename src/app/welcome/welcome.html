@@ -1,0 +1,21 @@
+	<h2> Welcome </h2>
+
+	<div ng-controller="welcome as vm">
+
+		<br>
+		<h4>Kendo angular dropdown select</h4>
+		<select kendo-drop-down-list
+			k-option-label="'Select a computer'"
+			k-data-text-field="'name'"
+			k-data-value-field="'id'"
+			k-data-source="vm.computers"
+			k-on-change="vm.selectChange(kendoEvent)"></select>
+		<br>
+
+		<h4>Select product</h4>
+        <select kendo-multi-select k-options="vm.selectOptions" 
+        	k-ng-model="vm.selectedIds"
+        	k-on-change="vm.multiSelectChange(kendoEvent)"></select>
+
+        <p ng-show="vm.selectedIds.length" style="padding-top: 1em;">Selected: {{ vm.selectedIds }}</p>
+	</div>
