@@ -7,6 +7,7 @@
 		function welcome () {
 			var vm = this;
 
+			/** kendo dropdown list control**/
 			vm.computers = [
 				{name: "Macbook Pro", id: 1},
 				{name: "Macbook Air", id: 2},
@@ -18,7 +19,7 @@
 			}
 
 
-
+			/** kendo multiselect dropdown control**/
     	vm.selectedIds = [];
 	    vm.selectOptions = {
         placeholder: "Select products...",

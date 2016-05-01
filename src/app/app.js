@@ -16,7 +16,7 @@
    // basically the first thing our module does.
    app.config(['$routeProvider', function($routeProvider) {
       $routeProvider
-         .when('/', { templateUrl: 'app/welcome/welcome.html' })
+         .when('/', { templateUrl: 'app/select-multiselect/select-multiselect.html' })
           .otherwise({ redirectTo: '/' }); // go to the welcome page
    }
    ]);
