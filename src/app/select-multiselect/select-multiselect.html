@@ -18,4 +18,18 @@
         	k-on-change="vm.multiSelectChange(kendoEvent)"></select>
 
         <p ng-show="vm.selectedIds.length" style="padding-top: 1em;">Selected: {{ vm.selectedIds }}</p>
+
+
+    <h4>Kendo date Picker</h4>
+    <input id="computerDeliveryDate"
+    	kendo-date-picker
+    	ng-model="dateString"
+      k-ng-model="dateObject"
+    	k-options="vm.deliveryDatePickerOptions"/>
+    <span kendo-notification="notification1"></span>
+		<pre>
+			dateString: {{ dateString }}
+			dateObject: {{ dateObject | date:"EEEE, MMMM d, yyyy" }}
+		</pre>
+
 	</div>

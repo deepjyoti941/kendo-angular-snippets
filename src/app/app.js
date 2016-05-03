@@ -17,7 +17,10 @@
    app.config(['$routeProvider', function($routeProvider) {
       $routeProvider
          .when('/', { templateUrl: 'app/select-multiselect/select-multiselect.html' })
-          .otherwise({ redirectTo: '/' }); // go to the welcome page
+         .when('/datasource', { templateUrl: 'app/dataSource/dataSource.html' })
+         .when('/global-events', { templateUrl: 'app/globalEvents/globalEvents.html' })
+
+         .otherwise({ redirectTo: '/' }); // go to the welcome page
    }
    ]);
 

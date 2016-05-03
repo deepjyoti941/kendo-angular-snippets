@@ -35,11 +35,17 @@
             }
         }
     	};
+
     	vm.multiSelectChange = function(e) {
 				console.log(e.sender.value());
     	}
 
-
+    	vm.deliveryDatePickerOptions = {
+    		format: 'MM/dd',
+    		start: 'month',
+    		value: new Date(),
+    		change: "notification1.show('Date Verified', 'error')"
+    	}
 
 		}
 })();
